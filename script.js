@@ -92,7 +92,7 @@ if (carname === "Corolla") {
          Swal.fire({
              title: "Mushehdi Edits!",
              text: 'There is your car :Black Corola Xli:15lac',
-             imageUrl: 'images/corolla black 15lac 2004',
+             imageUrl: 'images/corolla black 15lac 2004.jpg',
               imageWidth: 400,
              imageHeight: 200,
              imageAlt: 'Custom image',
@@ -206,7 +206,7 @@ if (carname === "Corolla") {
              Swal.fire({
                  title: "Mushehdi Edits!",
                  text: 'There is your car :Silver Corolla Gli:22lac',
-                 imageUrl: 'images/corolla silver 2010 22lac.jpeg',
+                 imageUrl: 'images/Gli 22.webp',
                  imageWidth: 400,
                  imageHeight: 200,
                  imageAlt: 'Custom image',
@@ -290,7 +290,7 @@ else if (carname === "Civic") {
         var model = prompt("Enter Modle you want :2011 :2012")
     }
     if (model==="2011") {
-        var price = prompt("Enter your orice range :23.5lac : 26lac")
+        var price = prompt("Enter your orice range :23.5lac ")
         if(price==="23.5lac"){
             var carcolor = prompt("Select your car color :White : Black")
             if (carcolor==="White") {
@@ -308,7 +308,7 @@ else if (carname === "Civic") {
             Swal.fire({
                 title: "Mushehdi Edits!",
                 text: 'There is your car :Honda Civic Reborn 2011:23.5lac',
-                imageUrl: 'images1/civic reborn 23.5lac 2011jpg',
+                imageUrl: 'images1/reborn black 23.5lac 2011.jpg',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: 'Custom image',
@@ -385,8 +385,24 @@ else if (carname === "Civic") {
     else if(generation==="Rebirth"){
         var model = prompt("Enter Modle you want :2013 :2016")
     }
+    else{
+      Swal.fire({
+          title: 'Soory not Avalible Yet!',
+          width: 600,
+          hieght: 450,
+          padding: '3em',
+          color: 'white',
+          background: '#fff url(images/blackbg1.jpg)',
+          backdrop: `
+            rgba(0,0,123,0.4)
+            url("/images/nyan-cat.gif")
+            left top
+            no-repeat
+          `
+        })
+      }
     if (model==="2013") {
-        var prize = prompt("Enter your orice range :35.6lac : 48lac")
+        var prize = prompt("Enter your orice range :35.6lac ")
         if(prize==="35.6lac"){
             var carcolor = prompt("Select your car color :White : Black")
             if (carcolor==="White") {
@@ -445,7 +461,22 @@ else if (carname === "Civic") {
                     imageAlt: 'Custom image',
                   }) 
      
-            }
+            } else{
+              Swal.fire({
+                  title: 'Soory not Avalible Yet!',
+                  width: 600,
+                  hieght: 450,
+                  padding: '3em',
+                  color: 'white',
+                  background: '#fff url(images/blackbg1.jpg)',
+                  backdrop: `
+                    rgba(0,0,123,0.4)
+                    url("/images/nyan-cat.gif")
+                    left top
+                    no-repeat
+                  `
+                })
+            }}
            else  if (carcolor==="Black") {
             Swal.fire({
                 title: "Mushehdi Edits!",
@@ -456,7 +487,22 @@ else if (carname === "Civic") {
                 imageAlt: 'Custom image',
               }) 
  
-         } 
+         }  else{
+          Swal.fire({
+              title: 'Soory not Avalible Yet!',
+              width: 600,
+              hieght: 450,
+              padding: '3em',
+              color: 'white',
+              background: '#fff url(images/blackbg1.jpg)',
+              backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat
+              `
+            })
+       }
          
          
     }
@@ -477,26 +523,24 @@ else if (carname === "Civic") {
             `
           })
      }
-    }
+    } else{
+      Swal.fire({
+          title: 'Soory not Avalible Yet!',
+          width: 600,
+          hieght: 450,
+          padding: '3em',
+          color: 'white',
+          background: '#fff url(images/blackbg1.jpg)',
+          backdrop: `
+            rgba(0,0,123,0.4)
+            url("/images/nyan-cat.gif")
+            left top
+            no-repeat
+          `
+        })
+   }
    
-}
 
-else {
-    Swal.fire({
-        title: 'Soory not Avalible Yet!',
-        width: 600,
-        hieght: 450,
-        padding: '3em',
-        color: 'white',
-        background: '#fff url(images/blackbg1.jpg)',
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      })
 
-}
 
   
